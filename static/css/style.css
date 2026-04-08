@@ -1,0 +1,225 @@
+/* AI STYLIST PAGE */
+
+.ai-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: black;
+    color: white;
+}
+
+.chat-box {
+    width: 50%;
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid white;
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.input-area {
+    display: flex;
+}
+
+.input-area input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+}
+
+.input-area button {
+    padding: 10px 20px;
+    border: 1px solid white;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.input-area button:hover {
+    background: white;
+    color: black;
+}
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background: black;
+    color: white;
+}
+
+/* HERO + VIDEO */
+.hero, .video-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bg-video {
+    position: absolute;
+    width: 100%;
+    height: 120%; /* important for parallax */
+    object-fit: cover;
+    transform: translateY(0);
+    transition: transform 0.1s linear;
+}
+
+.overlay {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+/* TYPOGRAPHY */
+h1 {
+    font-size: 80px;
+    letter-spacing: 8px;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 300;
+}
+
+p {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+/* BUTTON */
+.btn {
+    margin-top: 25px;
+    padding: 10px 30px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
+
+/* FEATURE SECTION */
+.feature {
+    display: flex;
+    height: 100vh;
+}
+
+.feature .text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+}
+
+.feature .image {
+    flex: 1;
+}
+
+.feature img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* AI BLOCK */
+.ai-block {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 1.5s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+body {
+    cursor: none;
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+html {
+    scroll-behavior: smooth;
+}
+.reveal-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1.2s ease;
+}
+
+.reveal-text.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.chat-box p {
+    white-space: pre-line;
+}
+.outfit-card {
+    background: #0e0e0e;
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    font-family: Arial, sans-serif;
+}
+
+.outfit-card h2 {
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.grid div {
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.note {
+    margin-top: 15px;
+    font-style: italic;
+    opacity: 0.7;
+}

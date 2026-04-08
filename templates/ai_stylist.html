@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Stylist</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<!-- HERO VIDEO -->
+<section class="hero">
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="{{ url_for('static', filename='videos/video4.mp4') }}" type="video/mp4">
+    </video>
+
+    <div class="overlay">
+        <h1 class="reveal-text">MAISON AURIELLE</h1>
+    </div>
+</section>
+
+
+<section class="ai-container">
+    <h1 class="reveal-text">MAISON AI STYLIST</h1>
+    <p class="reveal-text">Consult your personal fashion intelligence</p>
+
+    <div class="chat-box" id="chatBox"></div>
+
+    <div class="input-area">
+        <input type="text" id="userInput" placeholder="Ask about outfits, occasions...">
+        <button onclick="sendMessage()">SEND</button>
+    </div>
+</section>
+
+<script>
+function sendMessage() {
+    let input = document.getElementById("userInput").value;
+    if (!input) return;
+
+    fetch('/ai-stylist', {
+        method: 'POST',
+        body: new URLSearchParams({ query: input })
+    })
+    .then(res => res.json())
+    .then(data => {
+        renderCard(data);
+    });
+
+    document.getElementById("userInput").value = "";
+}
+
+function renderCard(data) {
+    let chatBox = document.getElementById("chatBox");
+
+    chatBox.innerHTML += `
+    <div class="outfit-card">
+        <h2>${data.title}</h2>
+
+        <div class="grid">
+            <div><strong>Top</strong><p>${data.items.top}</p></div>
+            <div><strong>Bottom</strong><p>${data.items.bottom}</p></div>
+            <div><strong>Shoes</strong><p>${data.items.shoes}</p></div>
+            <div><strong>Accessory</strong><p>${data.items.accessory}</p></div>
+        </div>
+
+        <p class="note">${data.style_note}</p>
+    </div>
+    `;
+}
+</script>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+
+<!-- JS -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>

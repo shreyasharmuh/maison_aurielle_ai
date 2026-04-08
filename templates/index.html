@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maison Aurielle AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<!-- HERO VIDEO -->
+<section class="hero">
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="https://res.cloudinary.com/dnrvcl5s7/video/upload/v1775613564/video1_hreov6.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay">
+        <h1 class="reveal-text">MAISON AURIELLE</h1>
+        <p class="reveal-text">SPRING / SUMMER 2026</p>
+        <a href="/ai-stylist" class="btn">ENTER THE EDITORIAL</a>
+    </div>
+</section>
+
+
+<!-- FEATURE STORY -->
+<section class="feature fade-in">
+    <div class="text">
+        <h2 class="reveal-text">THE NEW MINIMALISM</h2>
+        <p class="reveal-text">
+            A study in structure, silence, and silhouette.
+            Where restraint defines luxury and form speaks louder than excess.
+        </p>
+    </div>
+    <div class="image">
+        <img src="{{ url_for('static', filename='images/calvinklein1.jpg') }}">
+    </div>
+</section>
+
+
+<!-- SECOND VIDEO EDITORIAL -->
+<section class="video-section fade-in">
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="https://res.cloudinary.com/dnrvcl5s7/video/upload/v1775613685/video2_i3bwdg.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay">
+        <h2 class="reveal-text">RUNWAY INTELLIGENCE</h2>
+        <p class="reveal-text">AI meets couture. Precision meets instinct.</p>
+    </div>
+</section>
+
+
+<!-- AI STYLIST BLOCK -->
+<section class="ai-block fade-in">
+    <h2 class="reveal-text">CONSULT THE STYLIST</h2>
+    <p class="reveal-text">Personalized fashion intelligence powered by Maison AI</p>
+    <a href="/ai-stylist" class="btn">ENTER</a>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="fade-in">
+    <p>MAISON AURIELLE © 2026</p>
+</footer>
+
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+
+<!-- JS -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>
