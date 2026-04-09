@@ -28,7 +28,7 @@ An AI-powered fashion editorial platform that generates curated outfit recommend
 - Outfit card generator system
 - Luxury UI inspired by brands like Acne Studios & Calvin Klein
 
-👉 Repository: https://github.com/YOUR_USERNAME/maison-aurielle
+👉 Repository: [github](https://github.com/shreyasharmuh/maison_aurielle_ai.git)
 
 ---
 
@@ -44,13 +44,9 @@ An AI-powered fashion editorial platform that generates curated outfit recommend
 
 ## ✦ Connect
 
----
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=white)][shreyash](https://www.linkedin.com/in/shreyash-sharma-562a333a5/)
 
-## ✦ Connect
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=white)]([linkedin](https://www.linkedin.com/in/shreyash-sharma-562a333a5/))
-
-[![Instagram](https://img.shields.io/badge/Instagram-000000?style=for-the-badge&logo=instagram&logoColor=white)]([instagram](https://www.instagram.com/shreyasharmuh/))
+[![Instagram](https://img.shields.io/badge/Instagram-000000?style=for-the-badge&logo=instagram&logoColor=white)][shreyash](https://www.instagram.com/shreyasharmuh/)
 
 ---
 
